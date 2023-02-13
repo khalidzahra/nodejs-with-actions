@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "node src/app.js",
-    "test": "jest src/test/app.test.js --detectOpenHandles"
+    "test": "jest --detectOpenHandles --",
+    "coverage": "jest --collect-coverage --"
   },
   "repository": {
     "type": "git",
