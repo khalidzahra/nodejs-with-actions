@@ -42,3 +42,23 @@ describe("GET /user/*", () => {
         expect(response.body.username).toBe("Ahmed");
     });
 });
+
+describe("GET /multiply", () => {
+    it("Should return 4 (2 * 2)", async () => {
+        const response = await request.get("/multiply?n1=2&n2=2");
+        expect(response.status).toBe(200);
+        expect(response.text).toBe("4");
+    });
+
+    it("Should return 8 (2 * 4)", async () => {
+        const response = await request.get("/multiply?n1=2&n2=4");
+        expect(response.status).toBe(200);
+        expect(response.text).toBe("8");
+    });
+
+    it("Should return 6 (2 * 3)", async () => {
+        const response = await request.get("/multiply?n1=2&n2=3");
+        expect(response.status).toBe(200);
+        expect(response.text).toBe("6");
+    });
+});
