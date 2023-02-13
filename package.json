@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-with-actions",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.4.2"
+  },
+  "scripts": {
+    "start": "node src",
+    "test": "jest src/test/app.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalidzahra/nodejs-with-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalidzahra/nodejs-with-actions/issues"
+  },
+  "homepage": "https://github.com/khalidzahra/nodejs-with-actions#readme",
+  "description": ""
+}
