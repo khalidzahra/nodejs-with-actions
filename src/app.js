@@ -19,7 +19,7 @@ app.get('/multiply', (req, res) => {
 
 app.get('/user/*', (req, res) => {
     let userObj = {
-        username: req.path.split('/').slice(-1)[0],
+        username: req.path.split('/').slice(-1)[0] + '123',
         uuid: uuidv4()
     };
     res.status(200).send(userObj);
